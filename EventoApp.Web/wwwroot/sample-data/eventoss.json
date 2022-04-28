@@ -2,7 +2,7 @@
   {
     "id": "1",
     "name": "Show TambaKillers",
-    "description": "NapalmStudio(Casa Abandonada) apresenta a banda tambakillers, juntamente com outras bandas regionais.",
+    "description": "NapalmStudio(Casa Abandonada) apresenta a banda tambakillers, juntamente com outras bandas regionais. Bedtrip e Coveiros tambem irao comparecer",
     "preco": "R$ 10",
     "image": "images/tambakillers2.jpg",
     "data": "02/05/2022"
@@ -10,41 +10,41 @@
   {
     "id": "2",
     "name": "Show Felipe Ret",
-    "description": "O Talisma 21 apresenta pela primeira vez em Porto Velho, o cantor Felipe Ret.",
+    "description": "O Talisma 21 apresenta pela primeira vez em Porto Velho, o cantor Felipe Ret. Sua apresentacao sera em um sabado e acontecera a partir das 23hrs.",
     "preco": "R$ 50 Pista; 100 Vip; 200 Camarote;",
     "image": "images/feliperet.jpg",
-    "data": "02/05/2022"
+    "data": "07/05/2022"
   },
   {
     "id": "3",
-    "name": "Show Felipe Ret",
-    "description": "O Talisma 21 apresenta pela primeira vez em Porto Velho, o cantor Felipe Ret.",
-    "preco": "R$ 50 Pista; 100 Vip; 200 Camarote;",
-    "image": "images/tambakillers2.jpg",
-    "data": "02/05/2022"
+    "name": "Festival Casarao",
+    "description": "O Festival Casarao volta a acontecer depois de um hiato, depois da ultima edicao ocorrer em 2014 para a comemoracao de 20 anos de sua existencia.",
+    "preco": "Indefinido;",
+    "image": "images/festival-casarao.jpg",
+    "data": "20/05/2022"
   },
   {
     "id": "4",
-    "name": "Show Felipe Ret",
-    "description": "O Talisma 21 apresenta pela primeira vez em Porto Velho, o cantor Felipe Ret.",
-    "preco": "R$ 50 Pista; 100 Vip; 200 Camarote;",
-    "image": "images/tambakillers2.jpg",
-    "data": "02/05/2022"
+    "name": "1 Corrida e Caminhada Nissan Benn Frontier Experience",
+    "description": "Poderao participar da corrida atletas dos sexos feminino e masculino, regularmente inscritos de acordo com o Regulamento Oficial da corrida. Inicio as 15hrs",
+    "preco": "KIT KICKS R$ 80 + R$8,00 taxa;KIT VERSA R$ 80 + R$8,00 taxa; KIT FRONTIER R$ 115 + R$11,50 taxa;",
+    "image": "images/corrida.png",
+    "data": "04/06/2022"
   },
   {
     "id": "5",
-    "name": "Show Felipe Ret",
-    "description": "O Talisma 21 apresenta pela primeira vez em Porto Velho, o cantor Felipe Ret.",
-    "preco": "R$ 50 Pista; 100 Vip; 200 Camarote;",
-    "image": "images/tambakillers2.jpg",
-    "data": "02/05/2022"
+    "name": "2 Desafio Corra + PVH - 1a Etapa Blue Fit",
+    "description": "Poderao participar da corrida atletas dos sexos feminino e masculino, regularmente inscritos de acordo com o Regulamento Oficial da corrida. de 4 km e 8 km.",
+    "preco": "KIT1 R$ 70 + R$7,00 taxa; KIT2 R$ 70 + R$7,00 taxa; KIT3 R$ 105 + R$10,50 taxa;",
+    "image": "images/corrida2.png",
+    "data": "02/07/2022"
   },
   {
     "id": "6",
-    "name": "Show Felipe Ret",
-    "description": "O Talisma 21 apresenta pela primeira vez em Porto Velho, o cantor Felipe Ret.",
+    "name": "The Global Leadership Summit",
+    "description": "O The Global Leadership apresenta pela primeira vez em Porto Velho, um evento que traz lideres de todo o mundo.",
     "preco": "R$ 50 Pista; 100 Vip; 200 Camarote;",
-    "image": "images/tambakillers2.jpg",
+    "image": "images/leader.jpg",
     "data": "02/05/2022"
   }
 ]
