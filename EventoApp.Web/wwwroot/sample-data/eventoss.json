@@ -1,0 +1,53 @@
+[
+  {
+    "id": "1",
+    "name": "Show TambaKillers",
+    "description": "NapalmStudio(Casa Abandonada) apresenta a banda tambakillers, juntamente com outras bandas regionais.",
+    "preco": "R$ 10",
+    "image": "images/tambakillers2.jpg",
+    "data": "02/05/2022"
+  },
+  {
+    "id": "2",
+    "name": "Show Felipe Ret",
+    "description": "O Talisma 21 apresenta pela primeira vez em Porto Velho, o cantor Felipe Ret.",
+    "preco": "R$ 50 Pista; 100 Vip; 200 Camarote;",
+    "image": "images/feliperet.jpg",
+    "data": "02/05/2022"
+  },
+  {
+    "id": "3",
+    "name": "Show Felipe Ret",
+    "description": "O Talisma 21 apresenta pela primeira vez em Porto Velho, o cantor Felipe Ret.",
+    "preco": "R$ 50 Pista; 100 Vip; 200 Camarote;",
+    "image": "images/tambakillers2.jpg",
+    "data": "02/05/2022"
+  },
+  {
+    "id": "4",
+    "name": "Show Felipe Ret",
+    "description": "O Talisma 21 apresenta pela primeira vez em Porto Velho, o cantor Felipe Ret.",
+    "preco": "R$ 50 Pista; 100 Vip; 200 Camarote;",
+    "image": "images/tambakillers2.jpg",
+    "data": "02/05/2022"
+  },
+  {
+    "id": "5",
+    "name": "Show Felipe Ret",
+    "description": "O Talisma 21 apresenta pela primeira vez em Porto Velho, o cantor Felipe Ret.",
+    "preco": "R$ 50 Pista; 100 Vip; 200 Camarote;",
+    "image": "images/tambakillers2.jpg",
+    "data": "02/05/2022"
+  },
+  {
+    "id": "6",
+    "name": "Show Felipe Ret",
+    "description": "O Talisma 21 apresenta pela primeira vez em Porto Velho, o cantor Felipe Ret.",
+    "preco": "R$ 50 Pista; 100 Vip; 200 Camarote;",
+    "image": "images/tambakillers2.jpg",
+    "data": "02/05/2022"
+  }
+]
+
+
+

@@ -1,7 +1,28 @@
-﻿@page "/"
+﻿@*<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+*@
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+@page "/"
 
 <PageTitle>Index</PageTitle>
 
-<MudText Typo="Typo.h3" GutterBottom="true">Hello, world!</MudText>
-<MudText Class="mb-8">Welcome to your new app, powered by MudBlazor!</MudText>
-<MudAlert Severity="Severity.Normal">You can find documentation and examples on our website here: <MudLink Href="https://mudblazor.com" Typo="Typo.body2" Color="Color.Inherit"><b>www.mudblazor.com</b></MudLink></MudAlert>
+<MudText Typo="Typo.h3" GutterBottom="true">
+    Alô Portovelhenses!
+</MudText>
+
+<MudText Class=" mb-8">
+    Sejam bem vindos ao app de eventos de Porto Velho!
+</MudText>
+
+<MudImage Src="/images/Wallpaper-1501.jpg" Width="1200" Height="800" Alt="Imagem festa" Elevation="0" Class="rounded-lg ma-4"/>
+
+@*<MudAlert Severity="Severity.Info">
+    You can find documentation and examples on our website here: 
+    <MudLink Href="https://mudblazor.com" Typo="Typo.body2" Color="Color.Inherit">
+        <b>www.mudblazor.com</b>
+    </MudLink>
+</MudAlert>*@
+<br />
+<MinhaLista Titulo = "Navegue" Itens = "Ingressos; Festas e Shows; Games e Geeks; Tecnologia;">
+
+</MinhaLista>
+

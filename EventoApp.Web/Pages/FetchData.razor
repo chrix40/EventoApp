@@ -1,4 +1,5 @@
 ﻿@page "/fetchdata"
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
 @inject HttpClient Http
 @using EventoApp.Web.Shared
 
@@ -6,24 +7,24 @@
 
 <MudText Typo="Typo.h3" GutterBottom="true">Weather forecast</MudText>
 <MudText Class="mb-8">This component demonstrates fetching data from the server.</MudText>
-@if (forecasts == null)
+@if (eventos == null)
 {
     <MudProgressCircular Color="Color.Default" Indeterminate="true" />
 }
 else
 {
-    <MudTable Items="forecasts" Hover="true" SortLabel="Sort By" Elevation="0">
+    <MudTable Items="eventos" Hover="true" SortLabel="Sort By" Elevation="0">
         <HeaderContent>
-            <MudTh><MudTableSortLabel InitialDirection="SortDirection.Ascending" SortBy="new Func<WeatherForecast, object>(x=>x.Date)">Date</MudTableSortLabel></MudTh>
-            <MudTh><MudTableSortLabel SortBy="new Func<WeatherForecast, object>(x=>x.TemperatureC)">Temp. (C)</MudTableSortLabel></MudTh>
-            <MudTh><MudTableSortLabel SortBy="new Func<WeatherForecast, object>(x=>x.TemperatureF)">Temp. (F)</MudTableSortLabel></MudTh>
-            <MudTh><MudTableSortLabel SortBy="new Func<WeatherForecast, object>(x=>x.Summary!)">Summary</MudTableSortLabel></MudTh>
+            <MudTh><MudTableSortLabel InitialDirection="SortDirection.Ascending" SortBy="new Func<Evento, object>(x=>x.Data)">Data</MudTableSortLabel></MudTh>
+            <MudTh><MudTableSortLabel SortBy="new Func<Evento, object>(x=>x.Name)">Nome</MudTableSortLabel></MudTh>
+            <MudTh><MudTableSortLabel SortBy="new Func<Evento, object>(x=>x.preco)">Preço</MudTableSortLabel></MudTh>
+            <MudTh><MudTableSortLabel SortBy="new Func<Evento, object>(x=>x.Description)">Description</MudTableSortLabel></MudTh>
         </HeaderContent>
         <RowTemplate>
-            <MudTd DataLabel="Date">@context.Date</MudTd>
-            <MudTd DataLabel="Temp. (C)">@context.TemperatureC</MudTd>
-            <MudTd DataLabel="Temp. (F)">@context.TemperatureF</MudTd>
-            <MudTd DataLabel="Summary">@context.Summary</MudTd>
+            <MudTd DataLabel="Data">@context.Data</MudTd>
+            <MudTd DataLabel="Nome">@context.Name</MudTd>
+            <MudTd DataLabel="Preço">@context.preco</MudTd>
+            <MudTd DataLabel="Description">@context.Description</MudTd>
         </RowTemplate>
         <PagerContent>
             <MudTablePager PageSizeOptions="new int[]{50, 100}" />
@@ -33,20 +34,24 @@ else
 
 
 @code {
-    private WeatherForecast[]? forecasts;
+    private Evento[]? eventos; // lista-vetor com os dados
 
     protected override async Task OnInitializedAsync()
     {
-        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");
+        eventos = await Http.GetFromJsonAsync<Evento[]>("sample-data/eventoss.json");
     }
-    public class WeatherForecast
+
+    public class Evento
     {
-        public DateTime Date { get; set; }
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public string preco { get; set; }
+        public string Data { get; set; }
+        public string Image { get; set; }
 
-        public int TemperatureC { get; set; }
+        //public string Summary { get; set; } = default!;
 
-        public string? Summary { get; set; }
-
-        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+        //public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
     }
 }
