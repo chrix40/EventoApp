@@ -1,0 +1,57 @@
+﻿@page "/Lista"
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+@inject HttpClient Http
+@using EventoApp.Web.Shared
+
+<PageTitle>Lista de Eventos</PageTitle>
+
+<MudText Typo="Typo.h3" GutterBottom="true">Lista de Eventos</MudText>
+<MudText Class="mb-8">Lista de Eventos em Porto Velho - RO.</MudText>
+@if (eventos == null)
+{
+    <MudProgressCircular Color="Color.Default" Indeterminate="true" />
+}
+else
+{
+    <MudTable Items="eventos" Elevation="0">
+        <HeaderContent>
+            <MudTh><MudTableSortLabel InitialDirection="SortDirection.Ascending" SortBy="new Func<Evento, object>(x=>x.Data)">Data</MudTableSortLabel></MudTh>
+            <MudTh><MudTableSortLabel SortBy="new Func<Evento, object>(x=>x.Name)">Nome</MudTableSortLabel></MudTh>
+            <MudTh><MudTableSortLabel SortBy="new Func<Evento, object>(x=>x.preco)">Preço</MudTableSortLabel></MudTh>
+            <MudTh><MudTableSortLabel SortBy="new Func<Evento, object>(x=>x.Description)">Description</MudTableSortLabel></MudTh>
+        </HeaderContent>
+        <RowTemplate>
+            <MudTd DataLabel="Data">@context.Data</MudTd>
+            <MudTd DataLabel="Nome">@context.Name</MudTd>
+            <MudTd DataLabel="Preço">@context.preco</MudTd>
+            <MudTd DataLabel="Description">@context.Description</MudTd>
+        </RowTemplate>
+        <PagerContent>
+            <MudTablePager PageSizeOptions="new int[]{50, 100}" />
+        </PagerContent>
+    </MudTable>
+}
+
+
+@code {
+    private Evento[]? eventos; // lista-vetor com os dados
+
+    protected override async Task OnInitializedAsync()
+    {
+        eventos = await Http.GetFromJsonAsync<Evento[]>("sample-data/eventoss.json");
+    }
+
+    public class Evento
+    {
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public string preco { get; set; }
+        public string Data { get; set; }
+        public string Image { get; set; }
+
+        //public string Summary { get; set; } = default!;
+
+        //public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    }
+}

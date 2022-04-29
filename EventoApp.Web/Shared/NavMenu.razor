@@ -1,9 +1,42 @@
-﻿<MudNavMenu>
+﻿@*<MudNavMenu>
     <MudNavLink Href="" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home">Home</MudNavLink>
     <MudNavLink Href="Pesquisar" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Search">Pesquisar</MudNavLink>
-@*    <MudNavLink Href="counter" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Add">Counter</MudNavLink>*@
-@*    <MudNavLink Href="fetchdata" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.List">Fetch data</MudNavLink>*@
+
     <MudNavLink Href="Eventos" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Event">Eventos</MudNavLink>
     <MudNavLink Href="Favoritos" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Favorite">Favoritos</MudNavLink>
     <MudNavLink Href="Sobre" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Info">Sobre</MudNavLink>
-</MudNavMenu>
+</MudNavMenu>*@
+
+
+<MudPaper Width="250px" Class="d-inline-flex py-3" Elevation="0">
+    <MudNavMenu>
+        <MudDivider Class="my-2" />
+        <MudNavLink Href="" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home">Home</MudNavLink>
+        <MudNavLink Href="Pesquisar" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Search">Pesquisar</MudNavLink>
+        <MudNavGroup Title="Eventos" Icon="@Icons.Filled.Event" Expanded="true">
+            <MudNavLink Href="/Eventos" Icon="@Icons.Filled.Event" IconColor="Color.Success">Eventos</MudNavLink>
+            <MudNavLink Href="/Lista" Icon="@Icons.Filled.EventNote" IconColor="Color.Info">Lista de Eventos</MudNavLink>
+        </MudNavGroup>
+        <MudNavLink Href="Sobre" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Info">Sobre</MudNavLink>
+    </MudNavMenu>
+</MudPaper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*    <MudNavLink Href="counter" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Add">Counter</MudNavLink>*@
+@*    <MudNavLink Href="fetchdata" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.List">Fetch data</MudNavLink>*@
